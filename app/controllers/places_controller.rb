@@ -21,6 +21,7 @@ def index
   def show
       @place = Place.find(params[:id])
       @comment = Comment.new
+      @photo = Photo.new
   end
 
   def edit
