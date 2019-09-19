@@ -99,8 +99,8 @@
 <% @place.photos.each do |photo| %>
   <div>
     <blockquote>
-      <b><%= photo.caption %></b>-
-      <%= image_tag 'test.png', class: 'img-fluid' %>
+      <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
+      <b><%= photo.caption %></b>
     </blockquote>
   </div>
 <% end %>
