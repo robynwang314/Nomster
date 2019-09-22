@@ -66,12 +66,19 @@
 </div>
 
 
+<!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#PicModal">
+      Add a Picture
+    </button>
+  &nbsp;&nbsp;
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
+    Add a comment
+  </button> 
+
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
-    Add a comment
-  </button>
 </div>
 
 <div class="clear"></div>
@@ -88,9 +95,6 @@
       </blockquote>
     </div>
 <% end %>
-
-
-
 
 
 
@@ -118,18 +122,18 @@
   </div>
 </div>
 
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#PicModal">
-  Add a Picture
-</button>
+<div class="col-10 offset-1">
+  <h1 class="float left">Pictures</h1>
+</div>
 
 
-<% @place.photos.each do |photo| %>
-  <div>
-    <blockquote>
-      <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
-      <b><%= photo.caption %></b>
-    </blockquote>
-  </div>
-<% end %>
+<div class= "row>"
+  <% @place.photos.each do |photo| %>
+  <div class="col-12 col-sm-6">
+      <blockquote>
+        <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
+        <b><%= photo.caption %></b>
+      </blockquote>
+    </div>
+  <% end %>
+</div>
