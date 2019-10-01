@@ -15,7 +15,7 @@
   padding: 20px;
 }
 
-.booyah-box h2 {
+.booyah-box h2, h4 {
   font-family: 'Anton', sans-serif;
 }
 
@@ -91,7 +91,7 @@ blockquote p {
 
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > .carousel-item-prev > a > img {
-  max-height: 300px;
+  max-height: 375px;
   width: 100%;
 }
 

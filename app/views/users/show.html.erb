@@ -24,7 +24,7 @@
     <div class="row">
       <% @user.comments.each do |comment| %>
         <div class="col-12 col-sm-6">
-          <h2 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h2>
+          <h4 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h4>
           <blockquote>
             <% if comment.humanized_rating.present? %>
             <b><%= comment.humanized_rating %></b> -
@@ -45,7 +45,7 @@
   <br />
     <% @user.places.each do |place| %>
          <div class="booyah-box col-10 offset-1">
-          <h2><%= link_to place.name, place_path(place) %></h2>
+          <h4><%= link_to place.name, place_path(place) %></h4>
           <i><%= place.address %></i><br /><br />
           <p><%= place.description %></p><br />
          
