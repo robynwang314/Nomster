@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 
 @import "bootstrap";
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
+  background: rgba(244, 242, 240, .5);
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
@@ -13,7 +15,10 @@
   padding: 20px;
 }
 
-@import "font-awesome";
+.booyah-box h2 {
+  font-family: 'Anton', sans-serif;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   margin:0;
@@ -21,21 +26,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: image_url('crossword.png');
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  background: image_url('background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
 }
 
 .navbar {
-  background: image_url('cartographer.png');
+  font-family: 'Anton', sans-serif;
+  font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-  margin-bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.navbar-inverse .navbar-brand {
-  color: #84BDEE;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-family: 'Oswald', sans-serif;
+.navbar-collapse a.nav-link {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
 }
+
+.navbar-light a.navbar-brand {
+  font-family: 'Anton', sans-serif;
+  font-weight: 200;
+}
+
 
 .invalid-feedback {
   color: #ff3333;
@@ -53,7 +68,7 @@ body {
 }
 
 blockquote {
-  background: #f9f9f9;
+  background: rgba(249, 249, 249, .6);
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
@@ -69,26 +84,56 @@ blockquote:before {
   vertical-align: -0.4em;
 }
 
+
 blockquote p {
   display: inline;
 }
 
+
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > .carousel-item-prev > a > img {
-  max-height: 550px;
+  max-height: 300px;
   width: 100%;
 }
 
-.carousel-caption {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-  font-size: 60px;
+.carousel-caption h3 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 40px;
   font-weight: 100;
-  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
-  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: rgba(0, 0, 0, 0.5) 3px 3px;
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
-  position: absolute;
-  left: 0;
 }
 
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
+
+img.avatar {
+  width: 125px;
+}
+
+.place-headers h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+.place-headers {
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.map {
+  width: 100%;
+  padding: 40px;
+}
+
+.modal-title {
+  font-family: 'Anton', sans-serif;
+}
+
+.model-body {
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+.simple-form-text {
+  font-family: "Helvetica Neue", Helvetica;
+}
+

@@ -1,0 +1,24 @@
+<div class="booyah-box col-10 offset-1">
+  <div class="row">
+  <div class="col-10">
+    <h2>Pictures</h2>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<div class= "row>"
+  <% @place.photos.each do |photo| %>
+    <div class="col-12 col-sm-6">
+      <blockquote>
+        <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
+        <b><%= photo.caption %></b>
+      </blockquote>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+
