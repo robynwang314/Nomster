@@ -1,7 +1,6 @@
 # Nomster - Yelp Clone #
 
 A Yelp clone that integrates with the Google Maps API and includes features like user comments, star ratings, image uploading, and user authentication.
-
 <br/><br/>
 <b>Tools & Languages:</b> HTML5, CSS, Ruby, Rails, OOP, Inheritance, Authentication through Devise, AWS, and complex algorithms.
 
@@ -59,10 +58,10 @@ And it's code can be found at: https://github.com/robynwang314/nomster
 
 ### Screenshots ###
 
-<img src="/app/assets/images/home.png" alt="Homepage" width="45%" float="left"> &nbsp;
+<img src="/app/assets/images/home.png" alt="Homepage" width="45%" float="left"> &nbsp;&nbsp;&nbsp;
 <img src="/app/assets/images/establishment.png" alt="Establishment Page" width="45%" float="right">
 <br/>
-<img src="/app/assets/images/establishment2.png" alt="Establishment Page 2" width="45%" float="left"> &nbsp; 
+<img src="/app/assets/images/establishment2.png" alt="Establishment Page 2" width="45%" float="left"> &nbsp; &nbsp;&nbsp;
 <img src="/app/assets/images/contribute.png" alt="Contribute Comment" width="45%" float="right">
 
 <div id="contact"></div> 
