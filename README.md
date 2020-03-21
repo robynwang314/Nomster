@@ -16,8 +16,8 @@ A Yelp clone that integrates with the Google Maps API and includes features like
 <div id="about"></div> 
 
 ## About ##
- 
- ------
+ Similar to Yelp, this application allows users to preview a list of establishments with their most recent image, comments, and star ratings for the restaurant. Clicking on the name of a restaurant will bring the user to a more detailed page about the establishment which includes a map of location and a list of comments and pictures. Users may also log in to add comments, pictures, or add to the list of restaurants for review. 
+
 
 <div id="technologies"></div> 
 
