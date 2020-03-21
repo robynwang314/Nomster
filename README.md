@@ -35,7 +35,6 @@ Nomster integrates the following:
 <div id="setup"></div> 
 
 ## Getting Started ##
-### Set Up ###
 <p>In your coding environment, create a new application using PostgreSQL:</p>
 <pre><code> $ rails new nomster --database=postgresql </code></pre>
 
@@ -43,6 +42,24 @@ Nomster integrates the following:
 
 <p>Then change directory into your nomster project and create the initial database and start the server</p>
 <pre><code> $ rake db:create</code></pre>
+
+### Set Up Database###
+
+<p>Generate a model to create a database for storing places and user generated info</p>
+<pre><code>$ rails generate model place</code></pre>
+
+<p>Then edit the migration file to look like this and then migrate the file</p>
+
+<pre>
+  <code>
+    t.string :name
+    t.text :description
+    t.string :address
+  </code>
+  <code>$rake db:migrate</code>
+</pre>
+
+
 
 <p>In a separate terminal window, enter into your Nomster folder and set up the web development pipeline</p>
 <pre><code>create new Github repository
