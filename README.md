@@ -24,7 +24,7 @@ A Yelp clone that integrates with the Google Maps API and includes features like
 ## Built With ##
 Nomster integrates the following: 
 <ul>
-  <li><a href="https://aws.amazon.com/" rel="nofollow" target="_blank">AWS</a></li>
+  <li><a href="https://aws.amazon.com/" target="blank">AWS</a></li>
   <li><a href="https://github.com/twbs/bootstrap-rubygem" target="_blank">Bootstrap </a></li>
   <li><a href="https://github.com/carrierwaveuploader/carrierwave" target="_blank">Carrierwave</a></li>
   <li><a href="https://github.com/heartcombo/devise" target="_blank">Devise </a></li>
