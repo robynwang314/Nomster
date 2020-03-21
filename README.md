@@ -52,18 +52,16 @@ Nomster integrates the following:
 
 <pre>
   <code>
-    t.string :name
-    t.text :description
-    t.string :address
+  t.string :name
+  t.text :description
+  t.string :address
   </code>
   <code>$rake db:migrate</code>
 </pre>
 
-
-
 <p>In a separate terminal window, enter into your Nomster folder and set up the web development pipeline</p>
 <pre><code>create new Github repository
-  create project in heroku and then deploy it to heroku</code></pre>
+create project in heroku and then deploy it to heroku</code></pre>
 
 
 <div id="usage"></div> 
