@@ -4,10 +4,10 @@
     <h2>Pictures</h2>
   </div>
 </div>
-
+<br />
 <div class="clear"></div>
 
-<div class= "row>"
+<!-- <div class= "row">
   <% @place.photos.each do |photo| %>
     <div class="col-12 col-sm-6">
       <blockquote>
@@ -16,9 +16,22 @@
       </blockquote>
     </div>
   <% end %>
-</div>
+</div> -->
 
-
+<div class="scroll-container">
+    <div class="flex-container"> 
+      <div class="scrolling">
+        <% @place.photos.each do |photo| %>
+          <div class="iconcell">
+            <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
+            <div class="caption">
+             <!-- <div><%= photo.caption %></div> -->
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
 
 

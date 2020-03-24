@@ -1,3 +1,49 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.scroll-container {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.flex-container {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  justify-content: space-between;
+}
+
+.scrolling {
+  white-space: nowrap;
+  word-spacing: -3px;
+  letter-spacing: -3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.iconcell {
+  position: relative;
+  display: inline-block;
+  word-spacing: normal;
+  letter-spacing: normal;
+  white-space : normal;
+  height: 100%;
+  max-width: 100%;
+  width: 45%;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  padding: 3px;
+  vertical-align: top;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 95%;
+  word-wrap: normal;
+  text-align: center;
+  margin-top: 4%;
+}

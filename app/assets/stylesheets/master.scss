@@ -12,13 +12,12 @@
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .booyah-box h2, h4 {
   font-family: 'Anton', sans-serif;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   margin:0;
@@ -68,9 +67,8 @@ body {
 }
 
 blockquote {
-  background: rgba(249, 249, 249, .6);
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
+  margin: 1em 4px;
+  margin-left: 0;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
@@ -78,17 +76,22 @@ blockquote {
 blockquote:before {
   color: #ccc;
   content: open-quote;
-  font-size: 4em;
+  font-size: 2.75em;
   line-height: 0.1em;
-  margin-right: 0.25em;
   vertical-align: -0.4em;
 }
 
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 2.75em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
 
 blockquote p {
   display: inline;
 }
-
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > .carousel-item-prev > a > img {
   max-height: 375px;
@@ -136,4 +139,14 @@ img.avatar {
 .simple-form-text {
   font-family: "Helvetica Neue", Helvetica;
 }
+
+.head {
+  font-family: 'Anton', sans-serif;
+  margin-bottom: 2%;
+}
+ 
+a {
+  color: #000000;
+}
+
 

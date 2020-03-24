@@ -31,35 +31,52 @@
 
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
-      <h2><%= link_to place.name, place_path(place) %></h2>
-      <i><%= place.address %></i><br /><br />
-      <p><%= place.description %></p><br />
-      
-      <% if place.user.present? %>
-        <small><%= place.user.email %></small>
-      <% end %>
-
-    <% if place.comments.present? %>
-      <div class="col-12 col-9">
-        <blockquote>
-          <% if place.comments.last.humanized_rating.present? %>
-            <b><%= place.comments.last.humanized_rating %></b> -
-          <% end %>
-          <%= place.comments.last.message %>
-          <small><%= place.comments.last.user.email %></small>
-        </blockquote>
-      </div>
+    <center><h2><%= link_to place.name, place_path(place) %></h2>
+    <i><%= place.address %></i><br /><br/>
+    <%= place.description %></center><br />
+    <% if place.user.present? %>
+      <small class="float-right"><%= place.user.email %></small>
     <% end %>
+    <hr />
+    <br/>
 
+    <div class="head"> Latest Rating and Comment: </div>
+    <% if place.comments.present? %>
+      <!-- <div class="col-12 col-12">
+ -->  <blockquote>
+        <% if place.comments.last.humanized_rating.present? %>
+          <b><%= place.comments.last.humanized_rating %></b> -
+        <% end %>
+        <%= place.comments.last.message %> 
+        <small class="float-right"><%= place.comments.last.user.email %></small>
+      </blockquote>
+     <!--  </div> -->
+    <% end %>
+ 
+    <div class="head"> Images:</div>
+    
     <% if place.photos.present? %>
-      <div class="col-12 col-sm-6">
+      <!-- <div class="col-12 ">
         <blockquote>
           <%= image_tag place.photos.last.picture.to_s, class: 'img-fluid' %>
           <b><%= place.photos.last.caption %></b>
-        </blockquote>
+        </blockquote>  -->
+      <div class="scroll-container">
+          <div class="flex-container"> 
+            <div class="scrolling">
+              <% place.photos.each do |photo| %>
+                <div class="iconcell">
+                  <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
+                  <div class="caption">
+                   <div></div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
       </div>
     <% end %>
-
   </div>
 <% end %>
 

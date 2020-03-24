@@ -9,7 +9,7 @@
 
 <div class="row">
   <% @place.comments.each do |comment| %>
-    <div class="col-12 col-sm-6">
+    <div class="col-12 col-sm">
       <blockquote>
         <% if comment.humanized_rating.present? %>
           <b><%= comment.humanized_rating %></b> -
